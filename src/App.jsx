@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import PlannedTask from './components/PlannedTask'
-import ProcessTask from './components/ProcessTask'
 import CompletedTask from './components/CompletedTask'
 
 const App = () => {
@@ -45,7 +44,6 @@ const App = () => {
           </button>
         </div>
         <div className='w-full mt-7 h-[60%] flex items-center justify-between gap-3 px-6 '>
-          <ProcessTask allTask={allTask} />
           <PlannedTask allTask={allTask} btnStatus={btnStatus} />
           <CompletedTask />
         </div>
